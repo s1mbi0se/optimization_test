@@ -24,11 +24,11 @@ Há um programa que deve...
 
 1. A intersecção entre `55,0,1,2,3,4,5,6,7,8,9,` e `88,0,2,4,6,8,99,` é `0,2,4,6,8,`;
 2. A intersecção entre `77,10,11,12,13,` e `99,11,13,` é `11,33,`;
-3. A união entre `0,2,4,6,8,` e `11,33,` é 0,2,4,6,8,11,13,;
+3. A união entre `0,2,4,6,8,` e `11,33,` é `0,2,4,6,8,11,13,` (resposta final).
 
 ---
 
-A classe que implementa este algoritmo é chamada `MyProcessor`.
+A classe que implementa este algoritmo é chamada `MyProcessor`. A implementação atual usa [RoaringBitmaps](https://github.com/RoaringBitmap/RoaringBitmap) ([docs](https://www.javadoc.io/doc/org.roaringbitmap/RoaringBitmap/0.7.13)) para fazer uniões e intersecções nos conjuntos de inteiros. (Pode-se entender que a classe `RoaringBitmap` é uma como implementação de `Set<Integer>`).
 
 Há uma classe `TestRunner` que executa e confere que este programa funciona corretamente usando diferentes arquivos de input e output, separados por níveis de complexidade (a constante `LEVEL` que assume valores de 0 até 3). O programa é rodado em loop por 5 vezes.
 
