@@ -28,16 +28,16 @@ Há um programa que deve...
 
 ---
 
-A classe que implementa este algoritmo é chamada `MyProcessor`. A implementação atual usa [RoaringBitmaps](https://github.com/RoaringBitmap/RoaringBitmap) ([docs](https://www.javadoc.io/doc/org.roaringbitmap/RoaringBitmap/0.7.13)) para fazer uniões e intersecções nos conjuntos de inteiros. (Pode-se entender que a classe `RoaringBitmap` é uma como implementação de `Set<Integer>`).
+A classe que implementa este algoritmo é chamada `MyProcessor`. A implementação atual usa [RoaringBitmaps](https://github.com/RoaringBitmap/RoaringBitmap) ([docs](https://www.javadoc.io/doc/org.roaringbitmap/RoaringBitmap/0.7.13)) para fazer uniões e intersecções nos conjuntos de inteiros. (Pode-se entender que a classe `RoaringBitmap` é como uma implementação de `Set<Integer>`).
 
-Há uma classe `TestRunner` que executa e confere que este programa funciona corretamente usando diferentes arquivos de input e output, separados por níveis de complexidade (a constante `LEVEL` que assume valores de 0 até 3). O programa é rodado em loop por 5 vezes.
+Há uma classe chamada `TestRunner` que executa e confere que este programa funciona corretamente usando diferentes arquivos de input e output, separados por níveis de complexidade (a constante `LEVEL` que assume valores de 0 até 3). O programa é rodado em loop por 5 vezes.
 
 
 **Preparo**:
 
 1. Baixar o arquivo [testcases.tar.gz](https://transfer.sh/yRJWr/testcases.tar.gz) e descompactá-lo na raiz deste repositório.
 2. Renomear a classe `MyProcessor` para `{SEU_NOME}Processor`.
-3. Usar as flags `-Xms512M -Xms512M` ao rodar a classe `TestRunner`.
+3. Usar as flags `-Xms512M -Xms512M` na JVM ao rodar a classe `TestRunner`.
 4. Rodar a classe `TestRunner` no nível 0 (`TestRunner.LEVEL = 0`) e verificar que tudo está funcionando corretamente antes da sua otimização.
 
 **Objetivo**:
