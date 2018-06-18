@@ -42,6 +42,6 @@ Há uma classe `TestRunner` que executa e confere que este programa funciona cor
 
 **Objetivo**:
 
-Otimizar o programa tanto em uso de CPU quanto de memória o máximo possível, mantendo o comportamento do problema.
+Otimizar o programa tanto em uso de CPU quanto de memória o máximo possível, mantendo o comportamento esperado do programa.
 
 O resultado final deve ser medido no nível 3 do TestRunner (`TestRunner.LEVEL = 3`)
