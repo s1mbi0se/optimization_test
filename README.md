@@ -6,6 +6,28 @@ Há um programa que deve...
 2. Computar a união entre todas estas intersecções.
 3. Escrever esta união em um arquivo `output.txt` em ordem crescente. 
 
+## Exemplo:
+**Input:**
+```
+55,0,1,2,3,4,5,6,7,8,9,
+88,0,2,4,6,8,99,
+77,10,11,12,13,
+99,11,13,
+```
+
+**Output esperado**:
+```
+0,2,4,6,8,11,13,
+```
+
+**Explicação:**
+
+1. A intersecção entre `55,0,1,2,3,4,5,6,7,8,9,` e `88,0,2,4,6,8,99,` é `0,2,4,6,8,`;
+2. A intersecção entre `77,10,11,12,13,` e `99,11,13,` é `11,33,`;
+3. A união entre `0,2,4,6,8,` e `11,33,` é 0,2,4,6,8,11,13,;
+
+---
+
 A classe que implementa este algoritmo é chamada `MyProcessor`.
 
 Há uma classe `TestRunner` que executa e confere que este programa funciona corretamente usando diferentes arquivos de input e output, separados por níveis de complexidade (a constante `LEVEL` que assume valores de 0 até 3). O programa é rodado em loop por 5 vezes.
