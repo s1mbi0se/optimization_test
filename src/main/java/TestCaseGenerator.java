@@ -7,9 +7,9 @@ import java.util.Random;
 
 public class TestCaseGenerator {
 
-    private static final int LEVEL = 3;
+    private static final int LEVEL = 0;
     private static final Path TESTCASE_DIR = new File("testcases/level" + LEVEL).toPath();
-    private static final int[] QUANTITY_LEVELS = new int[]{500, 1000, 6000, 10000};
+    private static final int[] QUANTITY_LEVELS = new int[]{500, 1000, 2000, 5000};
 
     private static final Random RANDOM = new Random();
 
