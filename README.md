@@ -35,7 +35,7 @@ Há uma classe chamada `TestRunner` que executa e confere que este programa func
 
 **Preparo**:
 
-1. Baixar o arquivo [testcases.tar.gz](https://transfer.sh/yRJWr/testcases.tar.gz) e descompactá-lo na raiz deste repositório.
+1. Baixar o arquivo [testcases.tar.gz](https://github.com/s1mbi0se/optimization_test/blob/master/testcases.tar.gz?raw=true) e descompactá-lo na raiz deste repositório.
 2. Renomear a classe `MyProcessor` para `{SEU_NOME}Processor`.
 3. Usar as flags `-Xms512M -Xmx512M` na JVM ao rodar a classe `TestRunner`.
 4. Rodar a classe `TestRunner` no nível 0 (`TestRunner.LEVEL = 0`) e verificar que tudo está funcionando corretamente antes da sua otimização.
